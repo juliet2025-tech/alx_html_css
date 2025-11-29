@@ -30,7 +30,13 @@ article {
     padding: 10px;
     background-color: #e8f0fe; /* Optional light color for clarity */
 }
-
+article img {
+    width: 150px;            /* Set size */
+    height: 150px;           /* Make it square */
+    border-radius: 50%;      /* Circular shape */
+    display: block;          /* Start on new line */
+    margin: 0 auto 20px;     /* Center and add space below */
+    object-fit: cover;  }
 /* Aside (right column) */
 aside {
     flex: 1;                 /* 1/3 width */
