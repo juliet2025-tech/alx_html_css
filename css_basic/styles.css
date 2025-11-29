@@ -1,0 +1,72 @@
+/* ---------- styles.css ---------- */
+
+/* HEADER */
+header {
+    background-color: #003c99;      /* dark blue */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* NAVIGATION MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #cce0ff; /* light blue on hover */
+}
+
+/* MAIN CONTENT */
+main {
+    background: #f1f6ff; /* very light blue */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #003c99;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #003c99;
+    padding: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #003c99;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #cce0ff;
+}

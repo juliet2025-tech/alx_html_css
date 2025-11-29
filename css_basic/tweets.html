@@ -3,12 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tweets Page</title>
+    <title>Tweets</title>
+    
+    <!-- Link your CSS files -->
     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Tweets</h1>
-    <p>This is my tweets.html page.</p>
+    <!-- Header -->
+    <header>
+        <h1>My Twitter Feed</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <article>
+            <h2>Recent Tweets</h2>
+
+            <!-- Embedded Tweet from Twitter -->
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">
+                    The process… 
+                    <a href="https://t.co/WxGPGTHjDF">https://t.co/WxGPGTHjDF</a> 
+                    <a href="https://t.co/1nUNwK9wIr">pic.twitter.com/1nUNwK9wIr</a>
+                </p>
+                &mdash; DAVID | FIGMA WEBSITE DESIGNER (@davidosa_) 
+                <a href="https://twitter.com/davidosa_/status/1989267353507692929?ref_src=twsrc%5Etfw">
+                    November 14, 2025
+                </a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </article>
+
+        <aside>
+            <p>Comments section coming soon…</p>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Juliet - <a href="https://github.com/juliet2025-tech" target="_blank">here</a></p>
+    </footer>
 </body>
 </html>

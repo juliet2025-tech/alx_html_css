@@ -1,16 +1,32 @@
-/* base.css */
-body {
-    font-family: Arial, sans-serif;
+/* ---------- base.css ---------- */
+
+/* Reset margin and padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: #333;
+/* Default font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
+    line-height: 1.6;
+    padding: 20px;
 }
 
-p {
-    color: #555;
-    line-height: 1.5;
+/* Make all links blue */
+a {
+    color: #0056d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #003c99; /* deep blue */
 }
