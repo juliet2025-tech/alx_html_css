@@ -18,6 +18,9 @@ header {
     color: white;
 }
 
+/* No need to use order if HTML is correct */
+
+
 /* Logo */
 .logo {
     font-size: 2rem;
