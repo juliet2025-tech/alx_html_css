@@ -1,48 +1,72 @@
-/* Body container */
+/* Body */
 body {
-    display: flex;           /* Make body a flex container */
-    flex-direction: column;  /* Stack header, main, footer vertically */
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;
+    background-color: #f5f5f5;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
 }
 
-/* Main content area */
+/* Logo */
+.logo {
+    font-size: 2rem;       /* bigger text for logo */
+    font-weight: bold;
+    margin-right: 15px;    /* spacing from header title */
+}
+
+/* Main container */
 main {
-    display: flex;           /* Flex container for article and aside */
-    flex-direction: row;     /* Side by side */
-    flex: auto;              /* Automatic width and height */
-    gap: 10px;               /* Space between columns */
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 120px); /* adjusts for header/footer height */
 }
 
 /* Article (left column) */
 article {
-    flex: 2;                 /* 2/3 width */
-    overflow-y: auto;        /* Scroll if content too long */
-    padding: 10px;
-    background-color: #e8f0fe; /* Optional light color for clarity */
+    flex: 2;                      /* 2/3 width */
+    background-color: #e8f0fe;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;              /* enable vertical scroll */
 }
+
+/* Article profile image */
 article img {
-    width: 150px;            /* Set size */
-    height: 150px;           /* Make it square */
-    border-radius: 50%;      /* Circular shape */
-    display: block;          /* Start on new line */
-    margin: 0 auto 20px;     /* Center and add space below */
-    object-fit: cover;  }
+    border-radius: 50%;           /* circular image */
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+/* Article paragraph text */
+article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
 /* Aside (right column) */
 aside {
-    flex: 1;                 /* 1/3 width */
-    overflow-y: auto;        /* Scroll if content too long */
-    padding: 10px;
+    flex: 1;                      /* 1/3 width */
     background-color: #f9f9f9;
+    border-left: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-y: auto;             /* enable vertical scroll */
 }
 
 /* Footer */
@@ -50,16 +74,18 @@ footer {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
+    font-style: italic;
+    color: #555;
 }
 
-/* Responsive tweak for smaller screens */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column; /* Stack article and aside vertically on small screens */
-    }
-
-    article, aside {
-        flex: auto; /* Take full width */
-    }
+/* Optional: link styling */
+a {
+    color: #4a90e2;
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness is handled by works_on_smartphone class in base CSS */
