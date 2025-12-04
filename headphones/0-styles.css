@@ -1,0 +1,83 @@
+/* =========================
+   Header Styles
+========================= */
+
+/* Container */
+header .container {
+  max-width: 1000px; /* rounded from 1000.39px */
+  height: 32px;      /* Figma height */
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Logo */
+header .logo img {
+  width: auto;   /* adjust as per Figma, keep aspect ratio */
+  height: 32px;  /* match container height */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 25px; /* space between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* default link color */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #FF6565; /* hover color from task */
+}
+
+/* Navigation Button */
+.nav-button button {
+  background-color: #FF6565;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  border-radius: 5px; /* optional, can match Figma */
+}
+
+.nav-button button:hover,
+.nav-button button:active {
+  opacity: 0.9;
+}
+
+/* =========================
+   Mobile Styles (<=480px)
+========================= */
+@media (max-width: 480px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .nav-button button {
+    width: 100%;
+  }
+}
