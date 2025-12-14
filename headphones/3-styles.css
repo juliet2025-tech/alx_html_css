@@ -1,0 +1,78 @@
+button{background-color: rgb(255,101,101);
+    border-radius: 25px;
+align-content: center;
+justify-content: center;
+width: 162.58;
+height: 60.88;
+border-radius: 25px;
+box-shadow: none;
+margin-top: 400px;
+}
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white; /* Coral-red background */
+  color: #FF6565;
+  margin-bottom: 50px;
+}
+
+/* Section Heading */
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF6565;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+#contact-form button:hover {
+  background-color: #ffe0e0;
+}
+
+/* Contact Info */
+.contact-info p, .contact-info a {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Links */
+.socials a {
+  margin: 0 5px;
+  color: white;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}

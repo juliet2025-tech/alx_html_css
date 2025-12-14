@@ -1,0 +1,14 @@
+footer{background-color: rgb(7, 22, 41);  
+color: white;
+text-align: center;}
+
+.fa-instagram{margin-left: 1250px;
+margin-bottom: 5px;
+padding-bottom: 20px;}
+
+i.fa-brands:hover {
+  color: rgb (255,101, 101),  /* color on hover */
+}
+.logo{padding-top: 20px;
+margin-right: 1000px;
+}

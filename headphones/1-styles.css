@@ -1,0 +1,31 @@
+#b2{background-color: beige;
+}
+p{text-align: center;
+font-size: 16px;
+font-weight: lighter;
+text-align: center;
+width: 640px;
+margin: auto;
+height: 106px;
+margin-top: 50px;
+}
+.icon-container {
+  display: flex;           /* horizontal layout */
+  justify-content: space-around;  /* evenly spaced icons */
+  align-items: center;
+  margin: 40px 0;
+}
+
+.icon-box {
+  text-align: center;
+      /* text below each icon */
+}
+
+.icon-box img {
+  width: 60px;             /* size of the icon */
+  height: 60px;
+  margin-bottom: 10px;     /* space between icon and text */
+}
+#p20{ width: 250px;
+margin-top: 15px;
+}

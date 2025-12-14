@@ -1,0 +1,59 @@
+body{background-image: url("background (1).png") ;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center
+}
+
+p{text-align: center;
+font-size: 16px;
+font-weight: lighter;
+text-align: center;
+width: 640px;
+margin: auto;
+height: 106px;
+margin-top: 200px;
+color: white;
+}
+
+.pentagon-container {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 170px;
+}
+
+.pentagon {
+  width: 200px;
+  height: 180px;
+  background-color: #ff6565;
+
+  /* PENTAGON SHAPE */
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+
+}
+
+
+.pentagon p {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 150px;
+  text-align: center;
+}
+.percent {
+  font-size: 36px;
+   display: block;     /* important */
+  color: white;
+ margin-top: 50px ;
+text-align: center;
+font-weight: bold;}
+
+
